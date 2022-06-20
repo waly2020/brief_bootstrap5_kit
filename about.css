@@ -158,7 +158,7 @@ body{
     display: grid;
     grid-template-rows: repeat(2,1fr);
     width: 100%;
-    height: 700px;
+    height: 850px;
     padding: 15px;
     background-color: pink;
 }
@@ -173,18 +173,21 @@ body{
     gap: 15px;
     padding-top: 15px;
 }
+.long_image div{
+    background-size: cover;
+}
 .img_g1{
-    background-color: royalblue;
+    background: url("bubka_img/6137BUB-BAM-congres_Presa_16x9_EN-frame-button_9ad18c49fa6f683ebe59adb1925c1948.jpg");
 }
 .img_g2{
-    background-color: purple;
+    background: url("bubka_img/Bubka-Agency-Of-Yhe-Year-thumb-small2_9ad18c49fa6f683ebe59adb1925c1948.jpg");
 }
 .img_g3{
-    background-color: orange;
+    background: orange;
 }
 .img_g4{
-    background-color: chartreuse;
+    background: chartreuse;
 }
 .img_g5{
-    background-color: yellow;
+    background: yellow;
 }
