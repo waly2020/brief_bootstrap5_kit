@@ -29,7 +29,6 @@ body{
 }
 .main{
     width: 100%;
-    background-color: orange;
 }
 .menu{
     position: fixed;
@@ -160,7 +159,6 @@ body{
     width: 100%;
     height: 850px;
     padding: 15px;
-    background-color: pink;
 }
 .long_image{
     display: grid;
@@ -176,6 +174,10 @@ body{
 .long_image div{
     background-size: cover;
 }
+.petit_image div{
+    background-size: cover;
+    background-position: center;
+}
 .img_g1{
     background: url("bubka_img/6137BUB-BAM-congres_Presa_16x9_EN-frame-button_9ad18c49fa6f683ebe59adb1925c1948.jpg");
 }
@@ -183,10 +185,10 @@ body{
     background: url("bubka_img/Bubka-Agency-Of-Yhe-Year-thumb-small2_9ad18c49fa6f683ebe59adb1925c1948.jpg");
 }
 .img_g3{
-    background: orange;
+    background: url("bubka_img/BUBKA-Work-Bosto-Header_2021-02-01-144930_9ad18c49fa6f683ebe59adb1925c1948.jpg");
 }
 .img_g4{
-    background: chartreuse;
+    background: url("bubka_img/schaap_443077cf890fe3a7fc7d94aee8b2d81b.jpg");
 }
 .img_g5{
     background: yellow;
