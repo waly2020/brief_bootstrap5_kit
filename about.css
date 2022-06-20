@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "titre";
+    src: url("fonts/lineto-brown-bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "link";
+    src: url("fonts/lineto-brown-light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "para";
+    src: url("fonts/lineto-brown-regular.woff2") format("woff2");
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,p{
+    font-family: "para";
+}
+h1,h2{
+    font-family: "titre";
+}
+body{
+    padding-top: 90px;
+}
+.main{
+    width: 100%;
+    padding: 20px;
+    background-color: orange;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.menu ul{
+    display: flex;
+}
+.menu li{
+    margin: 0 0 0 20px;
+    list-style-type: none;
+}
+.menu a{
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.notif::after{
+    content: "5";
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #333;
+    font-family: "para";
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    transform: translate(40%,-40%);
+}
+.logo p{
+    font-size: 2em;
+    font-weight: bold;
+}
+.titre{
+    font-size: 6em;
+    color: #000;
+}
+.en_tete{
+    width: 100%;
+    height: 640px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+.en_tete img{
+    width: 330px;
+    height: 440px;
+}
+.en_tete h1{
+    position: relative;
+    font-size: 8em;
+    padding-bottom: 20px;
+}
+.anime_texte{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.en_tete p{
+    font-size: 2em;
+}
+.anime_texte::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+
+}
+.cerles{
+    position: absolute;
+    width: 44.28%;
+    height: 760px;
+    top: 0;
+    right: 80px;
+    z-index: -1;
+}
+.cerles > div{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background-color: rgb(74, 237, 194);
+}
+.c1{
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+.c2{
+    right: 0;
+    top: 0;
+}
+.c3{
+    left: 0;
+    top: 41%;
+    transform: translateY(-50%);
+}
+.c4{
+    right: 0;
+    top: 62%;
+    transform: translateY(-50%);
+}
+.c5{
+    bottom: 0;
+    left: 0;
+}
+.galerie{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+}
