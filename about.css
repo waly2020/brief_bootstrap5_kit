@@ -171,12 +171,10 @@ body{
     gap: 15px;
     padding-top: 15px;
 }
-.long_image div{
-    background-size: cover;
-}
-.petit_image div{
-    background-size: cover;
+.long_image div,.petit_image div{
+    position: relative;
     background-position: center;
+    background-size: cover;
 }
 .img_g1{
     background: url("bubka_img/6137BUB-BAM-congres_Presa_16x9_EN-frame-button_9ad18c49fa6f683ebe59adb1925c1948.jpg");
@@ -191,5 +189,70 @@ body{
     background: url("bubka_img/schaap_443077cf890fe3a7fc7d94aee8b2d81b.jpg");
 }
 .img_g5{
-    background: yellow;
+    position: relative;
+    background: rgb(74, 237, 194);
+}
+.view{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 220px;
+    height: 50px;
+    background: none;
+    border: solid 1px #000;
+    color: #fff;
+    border-radius: 13% 13% 14% 12% / 48% 50% 48% 48%;
+}
+.texte_anime h2{
+    font-size: 9em;
+}
+.dark_back{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.texte_dark{
+    overflow: hidden;
+}
+.dark_back .h2{
+    transform: translateY(70px);
+    font-size: 2.2em;
+    width: 57%;
+    margin: 20px 0;
+    opacity: 0;
+    color: #fff;
+    transition: 0.3s;
+}
+.petit_image .dark_back .h2{
+    width: 90%;
+}
+.dark_back .p{
+    font-size: 1.3rem;
+    opacity: 0;
+    transform: translateY(30px);
+    color: rgb(74, 237, 194);
+    transition: 0.3s;
+}
+.dark_back:hover .p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.4s .35s;
+}
+.dark_back:hover .h2{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.4s .2s;
+}
+.dark_back:hover{
+    background: rgba(0, 0, 0, 0.63);
 }
