@@ -352,6 +352,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,787px);
     gap: 20px;
+    padding-left: 20px;
     /* animation: caroucel 5s ease infinite; */
 }
 .element{
