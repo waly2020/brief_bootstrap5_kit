@@ -302,12 +302,41 @@ body{
     font-size: 9em;
     position: absolute;
 }
-.left{
+.texte_anime .left{
     top: 0;
     left: 0;
     color: rgb(74, 237, 194);
 }
-.right{
+.texte_anime .right{
     bottom: 0;
     right: 0;
+}
+.contener_btn_slide {
+    margin: 50px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    align-items: end;
+}
+.contener_btn_slide h2{
+    font-size: 3.5em;
+}
+.btns_slides {
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns_slides div{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.btn_left{
+    background: rgba(74, 237, 193, 0.63);
+}
+.btn_right{
+    background: rgb(74, 237, 194);
 }
