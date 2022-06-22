@@ -344,13 +344,36 @@ body{
     width: 100%;
     height: 476px;
     margin: 30px 0;
-    background-color: orange;
+    overflow: hidden;
 }
 .elements_caroucel{
-    width: 100%;
+    width: calc(785px * 4);
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4,785px);
+    grid-template-columns: repeat(4,787px);
     gap: 20px;
-    background-color: peachpuff;
+    /* animation: caroucel 5s ease infinite; */
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(74, 237, 194);
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 0 40px;
+}
+.titre_caroucel{
+    font-family: "link";
+    font-size: 1.6em;
+    line-height: 43px;
+    margin-bottom: 50px;
+}
+@keyframes caroucel {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
