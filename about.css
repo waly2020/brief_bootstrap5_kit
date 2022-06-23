@@ -469,6 +469,25 @@ body{
     background-position: -120px 0;
     margin-left: 120px;
 }
+.section_would{
+    width: 100%;
+    height: 602px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: orange; */
+}
+.img_would{
+    width: 565px;
+    height: 601px;
+    background: royalblue;
+}
+.img_would h2{
+    margin-bottom: 50px;
+}
+.btn_would{
+    position: absolute;
+    z-index: 30;
+}
 @keyframes caroucel {
     from{
         transform: translateX(0);
