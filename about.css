@@ -238,6 +238,13 @@ body{
     /* background-color: rgb(74, 237, 194); */
     z-index: -1;
 }
+.blanc::before,.blanc::after{
+    content: "";
+    position: absolute;
+    transition: 0.6s ease;
+    background-color: rgb(74, 237, 194);
+    z-index: -1;
+}
 .btn_anime::before{
     width: 50px;
     height: 100%;
@@ -259,6 +266,9 @@ body{
 }
 .noir .fleche_anime{
     background-color: #000;
+}
+.blanc .fleche_anime{
+    background-color: rgb(74, 237, 194);
 }
 .noir:hover{
     color: #fff;
@@ -485,12 +495,13 @@ body{
     height: 602px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 100px 0;
     /* background: orange; */
 }
 .img_would{
     position: relative;
     width: 565px;
-    height: 601px;
+    height: 565px;
     background: rgb(74, 237, 194);
 }
 .staking{
