@@ -450,6 +450,25 @@ body{
 .partetenaires img{
     width: 129px;
 }
+.section_img_para{
+    width: 100%;
+    height: 591px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin: 50px 0;
+}
+.section_img_para h2{
+    font-size: 3.4em;
+    margin-left: 50px;
+}
+.img_sec_para{
+    width: 591px;
+    height: 580px;
+    background: url("bubka_img/img_para.jpg");
+    background-size: cover;
+    background-position: -120px 0;
+    margin-left: 120px;
+}
 @keyframes caroucel {
     from{
         transform: translateX(0);
