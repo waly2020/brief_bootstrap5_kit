@@ -245,9 +245,6 @@ body{
     height: 100%;
     top: 0;
     left: 25px;
-    /* transform: translateX(-100%); */
-    /* border-radius: 13% 13% 14% 12% / 48% 50% 48% 48%; */
-
 }
 .btn_anime:hover::after{
      width: calc(100% - 50px);
@@ -291,6 +288,14 @@ body{
     background-color: #000;
     border-radius: 50%;
     z-index: 10;
+}
+.flch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flch img{
+    width: 10px;
 }
 .dark_back{
     position: absolute;
@@ -368,6 +373,9 @@ body{
     justify-items: center;
     align-items: end;
 }
+.cbs2{
+    margin: 90px 0;
+}
 .contener_btn_slide h2{
     font-size: 3.8em;
 }
@@ -384,6 +392,7 @@ body{
     border-radius: 50%;
 }
 .btn_left{
+    transform: rotate(180deg);
     background: rgba(74, 237, 193, 0.63);
 }
 .btn_right{
