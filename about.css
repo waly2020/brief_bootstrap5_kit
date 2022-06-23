@@ -494,14 +494,21 @@ body{
     width: 100%;
     height: 602px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
     margin: 100px 0;
     /* background: orange; */
 }
+.texte_sec_would{
+    padding: 100px 0 0 120px;
+}
+.texte_sec_would h2{
+    font-size: 3.6em;
+    margin-bottom: 40px;
+}
 .img_would{
     position: relative;
-    width: 565px;
-    height: 565px;
+    width: 485px;
+    height: 530px;
     background: rgb(74, 237, 194);
 }
 .staking{
@@ -513,8 +520,20 @@ body{
     padding: 100px 0 0 120px;
     z-index: 30;
 }
+.img_would_abs{
+    position: absolute;
+    width: 330px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-65%);
+    background: url("bubka_img/Glas.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .img_would h2{
-    font-size: 4em;
+    font-size: 3.3em;
     margin-bottom: 50px;
 }
 @keyframes caroucel {
