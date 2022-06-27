@@ -540,9 +540,9 @@ body{
     margin-bottom: 50px;
 }
 footer{
+    position: relative;
     width: 100%;
     height: 895px;
-    background: #eee;
     padding: 20px;
 }
 .main_footer{
@@ -550,6 +550,7 @@ footer{
     height: 100%;
     padding: 5em 5em 0 5em;
     background-color: #000;
+    position: relative;
 }
 .main_footer h2{
     font-size: 4em;
@@ -582,7 +583,7 @@ footer{
     padding: 13px 0;
     border: none;
     background: none;
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 1px #999;
     font-size: 1.4em;
     margin-bottom: 18px;
 }
@@ -648,4 +649,33 @@ input[type=checkbox]:checked:after {
     position: absolute;
     right: 0;
     color: #fff !important;
+}
+.footer_footer{
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0;
+    bottom: 0;
+    padding: 0 5em;
+    border-top: solid 1px #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.icones div{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 18px;
+}
+.icones img{
+    width: 100%;
+    height: 100%;
+}
+.icone_bizare{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #fff;
+    border-radius: 50%;
 }
