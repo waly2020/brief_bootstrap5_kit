@@ -558,7 +558,6 @@ footer{
     margin-bottom: 70px;
 }
 .section_news{
-    background: #444;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -578,7 +577,7 @@ footer{
     color: rgb(74, 237, 194);
     padding-bottom: 18px;
 }
-.newsletter input{
+#mail{
     width: 100%;
     padding: 13px 0;
     border: none;
@@ -587,9 +586,66 @@ footer{
     font-size: 1.4em;
     margin-bottom: 18px;
 }
-.checkbox{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+.check{
+    margin: 30px 0;
+}
+label{
+    position: relative;
+    color: #fff;
+    font-size: 0.9em;
+}
+label::after{
+    content: "";
+    position: absolute;
+    right: 5px;
+    bottom: -7px;
+    width: 63%;
+    height: 1px;
+    background-color: #fff;
+}
+/* checkbox */
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin: 0 12px 18px 0;
+}
+input[type=checkbox]:checked{
+    background-color: rgb(74, 237, 194);
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    background: #000;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+/* end checkbox */
+
+.btn_footer{
+    position: relative;
+    height: 55px;
+    z-index: 100;
+}
+.btn_footer button{
+    position: absolute;
+    right: 0;
+    color: #fff !important;
 }
