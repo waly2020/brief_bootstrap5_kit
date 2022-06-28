@@ -181,7 +181,6 @@ body{
     background-color: #000;
     left: 0;
     bottom: 0;
-
 }
 .cerles{
     position: absolute;
@@ -440,19 +439,20 @@ body{
     width: 100%;
     height: 340px;
     margin: 40px 0;
+    border: solid 1px #000;
 }
 .texte_anime h2{
-    font-size: 9em;
+    font-size: 9.5em;
     position: absolute;
 }
 .texte_anime .left{
-    top: 0;
     left: 0;
-    color: rgb(74, 237, 194);
+    bottom: 0;
 }
 .texte_anime .right{
-    bottom: 0;
+    top: 0;
     right: 0;
+    color: rgb(74, 237, 194);
 }
 .contener_btn_slide {
     margin: 50px 0;
