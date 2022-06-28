@@ -238,7 +238,7 @@ body{
     gap: 15px;
     padding-top: 15px;
 }
-.long_image div,.petit_image div{
+.long_image > div,.petit_image > div{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -258,6 +258,15 @@ body{
 .img_g5{
     position: relative;
     background: rgb(74, 237, 194);
+    overflow: hidden;
+}
+.img_cat{
+    position: absolute;
+    width: 47%;
+    bottom: 0;
+    left: 25%;
+    transform: translateY(100%);
+    transition: 0.9s cubic-bezier(0,0,1,0);
 }
 .img_g5:hover{
     cursor: pointer;
@@ -366,6 +375,9 @@ body{
 }
 .img_g5:hover .view::after{
     transform: translateX(0);
+}
+.img_g5:hover .img_cat{
+    transform: translateY(34%);
 }
 .fleche{
     position: relative;
