@@ -81,9 +81,68 @@ body{
     border-radius: 50%;
     transform: translate(40%,-40%);
 }
-.logo p{
+.logo{
+    position: relative;
+    width: 94px;
+    height: 40px;
+    overflow: hidden;
+}
+.menu #texte_logo{
+    position: absolute;
+    transform: translateY(0);
+    opacity: 1;
     font-size: 2em;
     font-weight: bold;
+    transition: 0.6s 0.6s ease-out;
+}
+.icones_menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 21px;
+    height: 36px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.6s 0.6s ease;
+}
+.menu.active .icones_menu{
+    opacity: 1;
+    transform: translateY(0);
+}
+.menu.active #texte_logo{
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.icones_menu > * {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.icn1{
+    left: 0;
+    top: 0;
+}
+.icn2{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.icn3{
+    bottom: 0;
+    left: 0;
+}
+.icn4{
+    right: 0;
+    top: 25%;
+    transform: translateY(-25%);
+}
+.icn5{
+    right: 0;
+    top: 75%;
+    transform: translateY(-75%);
 }
 .titre{
     font-size: 6em;
