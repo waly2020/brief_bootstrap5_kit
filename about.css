@@ -501,7 +501,7 @@ body{
     margin: 90px 0;
 }
 .contener_btn_slide h2{
-    font-size: 3.8em;
+    font-size: 4em;
 }
 .btns_slides {
     width: 120px;
@@ -578,11 +578,11 @@ body{
     width: 100%;
     height: 591px;
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     margin: 50px 0;
 }
 .section_img_para h2{
-    font-size: 3.4em;
+    font-size: 4.2em;
     margin-left: 50px;
 }
 .img_sec_para{
@@ -779,7 +779,25 @@ input[type=checkbox]:checked:after {
     border: solid 1px #fff;
     border-radius: 50%;
 }
-
+.back_para{
+    position: relative;
+    display: inline-block;
+}
+.back_para::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 60%;
+    left: 0;
+    top: 50%;
+    background-color: #4aedc2;
+    transform: translateY(-40%);
+    z-index: -1;
+    transition: 0.5s;
+}
+.back_para.active::after{
+    width: 100%;
+}
 @keyframes random_text {
     0%{
         content: "client ?";
